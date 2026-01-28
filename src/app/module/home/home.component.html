@@ -1,0 +1,190 @@
+<div class="container">
+<h1>Enquiry From</h1>
+
+<form #infoForm="ngForm" (ngSubmit)="onSubmit(infoForm)">
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+       <div class="form-group mb-3">
+         <input type="text"
+            name = "f_name"
+              class="form-control"
+                placeholder="Enter First Name"
+                 ngModel
+                   minlength="2"
+                    maxlength="20"
+                      required>
+          </div>
+      </div>
+
+<div class="col-sm-4">
+          <div class="form-group mb-3">
+  <input type="text"
+  name="m_name"
+  class="form-control"
+  placeholder="Enter Mid Name"
+  ngModel
+  required>
+</div>
+
+    </div>
+
+<div class="col-sm-4">
+        <div class="form-group mb-3">
+  <input type="text"
+  name="l_name"
+  class="form-control"
+  placeholder="Enter Last Name"
+  ngModel
+  required>
+</div>
+    </div>
+
+ </div>
+</div>
+
+
+<div class="form-group mb-3 " >
+<label class="form-label d-block">Gender : </label>
+<div class="form-check form-check-inline" >
+  <input class="form-check-input"
+  type="radio"
+  name="gender"
+  value="male"
+  ngModel
+  required>
+  <label class="form-check-label"> &nbsp;&nbsp; Male</label>
+</div>
+<div class="form-check form-check-inline">
+    <input class="form-check-input"
+      type="radio"
+      name="gender"
+      value="Female"
+      ngModel>
+    <label class="form-check-label">&nbsp;&nbsp;Female</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input"
+      type="radio"
+      name="gender"
+      value="Other"
+      ngModel>
+    <label class="form-check-label">&nbsp;&nbsp;Other</label>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+<div class="form-group mb-3">
+  <input type="email"
+      name="email"
+      class="form-control"
+      placeholder="Enter Email"
+      ngModel
+      required>
+</div>
+    </div>
+
+<div class="col-sm-6">
+<div class="form-group mb-3">
+  <input type="tel"
+  name="number"
+  class="form-control"
+  placeholder="Enter Mobile Num"
+  ngModel
+  required
+  pattern="[0-9]{10}">
+</div>
+    </div>
+ </div>
+</div>
+
+
+
+<div class="row justify-content-center">
+  <div class="col-12 col-md-8">
+<div class="form-group mb-3" >
+  <select  id="sub" name="subject" class="form-control" ngModel required>
+   <option value="">Select Subject</option>
+   <option>General enquiry</option>
+   <option>Support</option>
+   <option>Admission</option>
+   <option>Job</option>
+  </select>
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+<div class="form-group mb-3">
+  <input  type="text"
+  name="address"
+  class="form-control"
+  placeholder="Enter City"
+  ngModel
+  required>
+</div>
+    </div>
+    <div class="col-sm-4">
+<div class="form-group mb-3">
+  <input type="text"
+  class="form-control"
+  name="district"
+  placeholder="Enter District Name"
+  ngModel
+  required>
+</div>
+    </div>
+    <div class="col-sm-4">
+<div class="form-group mb-3">
+  <input type="number"
+  name="pincode"
+  class="form-control"
+  placeholder="Enter PinCode"
+  ngModel
+  required>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row justify-content-center">
+  <div class="col-12 col-md-8">
+<div class="form-group mb-3">
+  <textarea class="form-control"
+  placeholder="Enter Your Enquiry In Def"
+  name="message"
+  ngModel
+  required>
+</textarea>
+</div>
+</div>
+</div>
+<br>
+
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-3 mb-2">
+         <button type="reset"
+  class="btn btn-outline-secondary w-100"
+  (click)="infoForm.resetForm()">Reset</button>
+    </div>
+    <div class="col-sm-3 mb-2">
+<button type="submit" class="btn btn-outline-warning w-100"
+     >
+      submit</button>
+    </div>
+  </div>
+</div>
+</form>
+
+</div>

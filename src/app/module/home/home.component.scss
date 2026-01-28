@@ -1,0 +1,86 @@
+form{
+   border: 0px solid black;
+   border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.container h1{
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+.form-group ::placeholder{
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row{
+  margin-top: 30px;
+}
+.form-label{
+  padding-left: 20px;
+}
+.form-check-input{
+  margin-left: 20px;
+}
+#sub{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+option{
+  text-align: center;
+}
+textarea{
+  margin-left: 0;
+  margin-top: 5px;
+  width: 100%;
+}
+.col-sm-3 button{
+  width: 140px;
+  }
+
+
+
+/* media query*/
+/* mobile*/
+@media(max-width:576px){
+  h1{
+    font-size: 22px;
+    text-align: center;
+  }
+  .form-control{
+    font-size: 14px;
+  }
+  .form-check-inline{
+    display: block;
+    margin-bottom: 8px;
+  }
+  .btn{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-group select.form-control{
+    font-size: 13px;
+    height: 38px;
+    padding: 6 px 10px;
+  }
+
+}
+
+/* media tab*/
+@media(min-width:577px) and (max-width:768px){
+  h1{
+    font-size: 26px;
+    text-align: center;
+  }
+  .form-control{
+    font-size: 15px;
+  }
+  .btn{
+    width: 100%;
+  }
+  .form-group select.form-control{
+    font-size: 14px;
+    height: 42px;
+  }
+}
+
+

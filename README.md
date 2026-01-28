@@ -1,32 +1,38 @@
-<<<<<<< Agnular-Template-Driven-Form >>>>>>>
-# Frontend
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
 # Agnular-Template-Driven-Form
-Enquiry Form.... 
->>>>>>> 629516757f9cf7b7cdf7f69cdf212dbf34abbe8e
+
+This project is a **full-stack Enquiry Form application** with:
+
+- **Frontend:** Angular 16  
+- **Backend:** Node.js + Express + MySQL  
+- **Form Type:** Template-Driven Form  
+
+---
+
+## Features
+
+- Capture user information (First Name, Middle Name, Last Name, Gender, Email, Mobile, Address, District, PinCode)  
+- Subject selection (`General enquiry`, `Support`, `Admission`, `Job`)  
+- Message textarea for user enquiry  
+- Responsive design for **mobile, tablet, and desktop**  
+- Frontend validation for required fields, email, mobile pattern, and min/max length  
+- Backend stores data in MySQL (Node.js API)  
+- `.env` used for sensitive info (DB credentials) — not pushed to GitHub  
+
+---
+
+## Frontend Development
+
+1. Install dependencies:
+
+*Frontend
+cd frontend
+npm install
+ng serve
+
+*Backend 
+cd backend
+npm install
+node index.js
+
+
+
